@@ -12,6 +12,7 @@ setup(
         "python-dotenv>=0.19.0,<0.20.0",
         "tenacity>=8.0.1,<9.0.0",
         "typing-extensions>=4.0.0,<5.0.0",
+        "aiohttp>=3.8.0,<4.0.0",
     ],
     extras_require={
         "dev": [
