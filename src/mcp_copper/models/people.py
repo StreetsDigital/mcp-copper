@@ -100,7 +100,7 @@ class Person(CopperModel):
     class Config:
         allow_population_by_field_name = True
     
-    @validator("interaction_count")
+    @validator("interaction_count", allow_reuse=True)
     def validate_interaction_count(cls, v):
         """Validate interaction count is non-negative."""
         if v is not None and v < 0:
